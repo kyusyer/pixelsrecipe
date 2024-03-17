@@ -2,7 +2,7 @@
 
 function get_price(name) {
 
-    return fetch(`/recipe/${name}`)
+    return fetch(`item/${name}`)
         .then(response => response.text())
         .then(price => {
             return price;
@@ -27,7 +27,7 @@ function getData() {
 
     //update ingredients price:
 
-    document.querySelectorAll("")
+    // document.querySelectorAll("")
 
 
 
