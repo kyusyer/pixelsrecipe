@@ -26,6 +26,13 @@ SECRET_KEY = 'django-insecure-tc9p2uu&4zk1l(7--ay)#+io8#u9%d=y((44i-rqnil^ffphq%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+
+
+ALLOWED_HOSTS = [
+    '*',
+]
+
 ALLOWED_HOSTS = ['*']
 
 
@@ -51,6 +58,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 
+]
+
+CSRF_TRUSTED_ORIGINS = [
+   
+    "https://pixelsrecipe-production.up.railway.app/",
+    # "https://localhost:8080/"
 ]
 
 ROOT_URLCONF = 'pixels.urls'
@@ -129,17 +142,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = [
-   
-    "https://pixelsrecipe-production.up.railway.app/",
-    # "https://localhost:8080/"
-]
 
 
-ALLOWED_HOSTS = [
-    '*',
-]
-
-CORS_ORIGIN_WHITELIST = [
-    'https://pixelsrecipe-production.up.railway.app/',
-]
