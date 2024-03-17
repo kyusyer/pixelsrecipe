@@ -60,7 +60,7 @@ MIDDLEWARE = [
 
 CSRF_TRUSTED_ORIGINS = [
    
-    "https://pixelsrecipe-production.up.railway.app/recipe",
+    "https://pixelsrecipe-production.up.railway.app",
     # "https://localhost:8080/"
 ]
 
