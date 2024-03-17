@@ -128,3 +128,18 @@ STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+   
+    "https://pixelsrecipe-production.up.railway.app/",
+    # "https://localhost:8080/"
+]
+
+
+ALLOWED_HOSTS = [
+    '*',
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'https://pixelsrecipe-production.up.railway.app/',
+]
