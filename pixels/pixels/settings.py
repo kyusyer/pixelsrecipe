@@ -29,9 +29,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = [
-    '*',
-]
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -62,7 +60,7 @@ MIDDLEWARE = [
 
 CSRF_TRUSTED_ORIGINS = [
    
-    "https://pixelsrecipe-production.up.railway.app/",
+    "https://pixelsrecipe-production.up.railway.app/recipe",
     # "https://localhost:8080/"
 ]
 
