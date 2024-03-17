@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels Recipe</title>
+    <link rel="stylesheet" href="{% static 'recipe/recipe.css' %}">
+    <script src="{% static 'recipe/recipe.js' %}">
+
+    </script>
+</head>
+
+<body>
+
+    <div id="containerAll">
+
+        <div id="headerDiv">
+            <h1 id="headerText">Pixels Recipe</h1>
+
+        </div>
+
+        <div id="contentDiv">
+            <div id="recipe_input">
+                <form id="formid" action="{% url 'recipe:index' %}" method="post">
+                    {% csrf_token %}
+                    {{form.recipe}}
+                    </select>
+                    <input type="submit">
+                </form>
+
+
+            </div>
+            <div id="recipename">
+                <h1>item:&emsp; <span id="recipeName">{{selected.recipe}}</span>
+                </h1>
+                <h3>Production cost:&emsp; <span id="recipeCost">{{selected.prodCost}}</span></h3>
+                <h3>price:&emsp; <span id="recipePrice">{{selected.price}}</span></h3>
+                <h3>profit:&emsp; <span id="recipeProfit">{{selected.profit}}</span></h3>
+                <h3>energy Cost:&emsp; <span>{{selected.energyCost}}</span></h3>
+                <h3>PE:&emsp; <span id="recipePE">{{selected.PE}}</span></h3>
+                <!-- <h3>Production cost:&emsp; <span id="recipeCost"></span></h3>
+                <h3>price:&emsp; <span id="recipePrice"></span></h3>
+                <h3>profit:&emsp; <span id="recipeProfit"></span></h3>
+                <h3>energy Cost:&emsp; <span></span></h3>
+                <h3>PE:&emsp; <span id="recipePE"></span></h3> -->
+            </div>
+
+
+            <div id="recipediv">
+                <table id="recipe">
+                    <thead id="tableHead">
+                        <td> Item</td>
+                        <td>quantity</td>
+                        <td>market cost</td>
+                        <td>total value</td>
+                    </thead>
+                    <tbody>
+                        {% for ingredient in ingredients%}
+                        <tr>
+
+
+                            <td class="itemName">{{ingredient.item_name}}</td>
+                            <td class="itemQuantity">{{ingredient.quantity}}</td>
+                            <td class="itemPrice">{{ingredient.price}}</td>
+                            <td class="itemTotal">{{ingredient.total}}</td>
+
+                            <!-- <td class="itemQuantity">--</td>
+                            <td class="itemPrice">--</td>
+                            <td class="itemTotal">--</td> -->
+
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <hr>
+
+                <button id="refresh_button">Refresh Price Now</button>
+
+            </div>
+
+
+        </div>
+        <div id="trial">
+
+            <ul>
+                {% for item in Items %}
+                <li>{{item.name_item}} {{ item.id_item}}</li>
+
+                {% empty %}
+
+                <li>Unable to Load data</li>
+                {% endfor %}
+
+            </ul>
+
+
+            <ul>
+                {% for recipe in Recipes %}
+
+                <li> {{recipe.name_recipe}}</li>
+
+
+                {% empty %}
+
+                <li>Unable to Load data</li>
+
+                {% endfor %}
+            </ul>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
