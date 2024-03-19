@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Directory</title>
+    <link rel="stylesheet" href="{% static 'empty/styles.css' %}">
+</head>
+
+<body>
+    <div id="main_container">
+        <div id="home_recipe">
+            <a href="{% url 'recipe:index'%}">
+                <h1>Recipe Page</h1>
+            </a>
+        </div>
+        <div id="others">
+            Nothings in here...
+        </div>
+
+    </div>
+</body>
+
+</html>

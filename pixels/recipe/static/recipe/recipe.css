@@ -14,38 +14,77 @@ td {
 #headerDiv {
     background-color: rgb(52, 132, 218);
     text-emphasis-style: bold;
-    border: 3px solid red;
+    /* border: 1px solid red; */
     text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
 #recipename,
-#recipediv,
 #recipe_input {
 
 
-    padding-left: 100px;
-    padding-right: 100px;
+    background-color: yellow;
+    padding-left: 5%;
+    width: 90%;
+    margin: auto;
+
+}
+
+#recipediv {
+
+    background-color: rgb(165, 161, 119);
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 5%;
 
 }
 
 #containerAll {
+
     width: 100vw;
     height: 100vh;
+    background-color: pink;
 
 }
 
 
 #contentDiv {
     border: 1px solid red;
+    width: auto;
+    height: 100%;
+    margin: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    background-color: purple;
+
 }
 
-#trial {
-    display: None;
+form {
+    width: 100%;
 }
+
+/* #trial {
+    display: None;
+} */
+
+#recipe {
+    text-align: center;
+    margin: auto;
+}
+
+
 
 #tableHead {
     background-color: skyblue;
+}
+
+#refresh_button {
+    display: None;
+}
+
+tbody {
+    background-color: white;
 }
