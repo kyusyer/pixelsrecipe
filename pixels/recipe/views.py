@@ -46,7 +46,7 @@ def index(request):
                 productname = Recipe.objects.get(id_recipe=selected_recipeID).name_recipe.name_item
                 product_id = Item.objects.get(name_item=productname).id_item
                 price = get_price(product_id)
-                profit = round(0.99*(int(price) - total),0)
+                profit = round(0.99*int(price) - total,0)
                 energy = recipedata[selected_recipeID]["EnergyNeeded"]
 
                 try:
