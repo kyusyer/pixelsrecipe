@@ -45,8 +45,12 @@ def index(request):
                 
                 productname = Recipe.objects.get(id_recipe=selected_recipeID).name_recipe.name_item
                 product_id = Item.objects.get(name_item=productname).id_item
+
                 price = get_price(product_id)
-                profit = round(0.99*int(price) - total,0)
+                out_quantity = recipedata[selected_recipeID]["output_quantity"]
+
+                qntyPrice = f"{out_quantity}({price})"
+                profit = round(0.99*int(price)*out_quantity - total,0)
                 energy = recipedata[selected_recipeID]["EnergyNeeded"]
 
                 try:
@@ -58,6 +62,7 @@ def index(request):
                 selected = {
                     "recipe":Recipe.objects.get(id_recipe=selected_recipeID).name_recipe.name_item,
                     "prodCost": total,
+                    "qntyPrice":qntyPrice,
                     "price": price,
                     "profit": profit,
                     "energyCost": energy,

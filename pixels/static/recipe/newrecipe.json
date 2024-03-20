@@ -6,7 +6,8 @@
                 "quantity": 51
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_Woodburning_Stove_Kit": {
         "requiredItems": [
@@ -31,7 +32,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_Popberry_Loaf": {
         "requiredItems": [
@@ -52,7 +54,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Grumpkin_Loaf": {
         "requiredItems": [
@@ -73,7 +76,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_RoninChain": {
         "requiredItems": [
@@ -82,7 +86,8 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_Grumpkin_Pie": {
         "requiredItems": [
@@ -95,7 +100,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Bundle_of_Planks": {
         "requiredItems": [
@@ -104,7 +110,8 @@
                 "quantity": 144
             }
         ],
-        "EnergyNeeded": 36
+        "EnergyNeeded": 36,
+        "output_quantity": 1
     },
     "ach_Textile_Mill_Blueprint": {
         "requiredItems": [
@@ -129,7 +136,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_Scarrot_Pie": {
         "requiredItems": [
@@ -142,7 +150,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Log_Decoration": {
         "requiredItems": [
@@ -159,7 +168,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_Scarrot_Loaf": {
         "requiredItems": [
@@ -180,7 +190,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Kiln_Blueprint": {
         "requiredItems": [
@@ -205,7 +216,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_ach__Wooden_Bench_Front_View": {
         "requiredItems": [
@@ -218,7 +230,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_Pancakes": {
         "requiredItems": [
@@ -231,7 +244,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Barrel_(Purple_Fill)": {
         "requiredItems": [
@@ -248,7 +262,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 2
+        "EnergyNeeded": 2,
+        "output_quantity": 1
     },
     "ach_Scarecrow": {
         "requiredItems": [
@@ -277,7 +292,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_Popberry_Pie": {
         "requiredItems": [
@@ -290,7 +306,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Barrel_(Empty)": {
         "requiredItems": [
@@ -303,7 +320,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 1.5
+        "EnergyNeeded": 1.5,
+        "output_quantity": 1
     },
     "ach_plaster": {
         "requiredItems": [
@@ -320,7 +338,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 9
+        "EnergyNeeded": 9,
+        "output_quantity": 1
     },
     "ach_Block_of_Bricks": {
         "requiredItems": [
@@ -329,7 +348,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 48
+        "EnergyNeeded": 48,
+        "output_quantity": 1
     },
     "ach_Brick": {
         "requiredItems": [
@@ -338,7 +358,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_Bomb-Shell": {
         "requiredItems": [
@@ -359,7 +380,8 @@
                 "quantity": 4
             }
         ],
-        "EnergyNeeded": 8
+        "EnergyNeeded": 8,
+        "output_quantity": 1
     },
     "ach_Wood_Beam": {
         "requiredItems": [
@@ -372,7 +394,8 @@
                 "quantity": 8
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_sluggery": {
         "requiredItems": [
@@ -401,7 +424,8 @@
                 "quantity": 42
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_Archery": {
         "requiredItems": [
@@ -430,7 +454,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 5
+        "EnergyNeeded": 5,
+        "output_quantity": 1
     },
     "ach_Mine_Blueprint": {
         "requiredItems": [
@@ -459,7 +484,8 @@
                 "quantity": 48
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_Wooden_Throne": {
         "requiredItems": [
@@ -488,7 +514,8 @@
                 "quantity": 4
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_silkrope": {
         "requiredItems": [
@@ -501,7 +528,8 @@
                 "quantity": 4
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_Barn": {
         "requiredItems": [
@@ -514,7 +542,8 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 88
+        "EnergyNeeded": 88,
+        "output_quantity": 1
     },
     "ach_limestone_paving": {
         "requiredItems": [
@@ -527,7 +556,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 8
+        "EnergyNeeded": 8,
+        "output_quantity": 1
     },
     "ach_space_chair": {
         "requiredItems": [
@@ -552,7 +582,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 50
+        "EnergyNeeded": 50,
+        "output_quantity": 1
     },
     "ach_Woodworking_Bench_Kit": {
         "requiredItems": [
@@ -561,7 +592,8 @@
                 "quantity": 144
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_Iron": {
         "requiredItems": [
@@ -570,7 +602,8 @@
                 "quantity": 4
             }
         ],
-        "EnergyNeeded": 3
+        "EnergyNeeded": 3,
+        "output_quantity": 1
     },
     "ach_Stick": {
         "requiredItems": [
@@ -579,7 +612,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_Shrapnel": {
         "requiredItems": [
@@ -588,7 +622,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_constructionPowder": {
         "requiredItems": [
@@ -601,7 +636,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 5
+        "EnergyNeeded": 5,
+        "output_quantity": 1
     },
     "ach_Glue": {
         "requiredItems": [
@@ -622,7 +658,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 3
+        "EnergyNeeded": 3,
+        "output_quantity": 1
     },
     "ach_Barrel_(Red_Fill)": {
         "requiredItems": [
@@ -639,7 +676,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 2
+        "EnergyNeeded": 2,
+        "output_quantity": 1
     },
     "ach_silkcloth": {
         "requiredItems": [
@@ -656,7 +694,8 @@
                 "quantity": 4
             }
         ],
-        "EnergyNeeded": 3
+        "EnergyNeeded": 3,
+        "output_quantity": 1
     },
     "ach_Barrel_(Filled_with_Tools)": {
         "requiredItems": [
@@ -681,7 +720,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 2
+        "EnergyNeeded": 2,
+        "output_quantity": 1
     },
     "ach_fireplace": {
         "requiredItems": [
@@ -718,7 +758,8 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_waterland_shark": {
         "requiredItems": [
@@ -743,7 +784,8 @@
                 "quantity": 15
             }
         ],
-        "EnergyNeeded": 50
+        "EnergyNeeded": 50,
+        "output_quantity": 1
     },
     "ach_green_tent": {
         "requiredItems": [
@@ -760,7 +802,8 @@
                 "quantity": 5
             }
         ],
-        "EnergyNeeded": 20
+        "EnergyNeeded": 20,
+        "output_quantity": 1
     },
     "ach_Flour": {
         "requiredItems": [
@@ -769,7 +812,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 2
+        "EnergyNeeded": 2,
+        "output_quantity": 1
     },
     "ach_plastic": {
         "requiredItems": [
@@ -782,7 +826,8 @@
                 "quantity": 4
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_Plank": {
         "requiredItems": [
@@ -791,7 +836,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 3
+        "EnergyNeeded": 3,
+        "output_quantity": 1
     },
     "ach_triplefountain": {
         "requiredItems": [
@@ -816,7 +862,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 15
+        "EnergyNeeded": 15,
+        "output_quantity": 1
     },
     "ach_statuefountain": {
         "requiredItems": [
@@ -837,7 +884,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 30
+        "EnergyNeeded": 30,
+        "output_quantity": 1
     },
     "ach_turquoise_couch": {
         "requiredItems": [
@@ -866,7 +914,8 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_bundleOfSticks": {
         "requiredItems": [
@@ -875,7 +924,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_stackOfWoodBeams": {
         "requiredItems": [
@@ -892,7 +942,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 48
+        "EnergyNeeded": 48,
+        "output_quantity": 1
     },
     "ach_trashcan": {
         "requiredItems": [
@@ -925,7 +976,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 80
+        "EnergyNeeded": 80,
+        "output_quantity": 1
     },
     "ach_sacOfFlour": {
         "requiredItems": [
@@ -934,7 +986,8 @@
                 "quantity": 24
             }
         ],
-        "EnergyNeeded": 24
+        "EnergyNeeded": 24,
+        "output_quantity": 1
     },
     "ach_cartOfIron": {
         "requiredItems": [
@@ -943,7 +996,8 @@
                 "quantity": 48
             }
         ],
-        "EnergyNeeded": 36
+        "EnergyNeeded": 36,
+        "output_quantity": 1
     },
     "ach_collectionOfCloth": {
         "requiredItems": [
@@ -960,7 +1014,8 @@
                 "quantity": 48
             }
         ],
-        "EnergyNeeded": 36
+        "EnergyNeeded": 36,
+        "output_quantity": 1
     },
     "ach_globuleOfGlue": {
         "requiredItems": [
@@ -981,7 +1036,8 @@
                 "quantity": 24
             }
         ],
-        "EnergyNeeded": 36
+        "EnergyNeeded": 36,
+        "output_quantity": 1
     },
     "ach_jarOfConstructionPowder": {
         "requiredItems": [
@@ -994,7 +1050,8 @@
                 "quantity": 24
             }
         ],
-        "EnergyNeeded": 60
+        "EnergyNeeded": 60,
+        "output_quantity": 1
     },
     "ach_canOfShrapnel": {
         "requiredItems": [
@@ -1003,7 +1060,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 48
+        "EnergyNeeded": 48,
+        "output_quantity": 1
     },
     "ach_rackOfRope": {
         "requiredItems": [
@@ -1016,7 +1074,8 @@
                 "quantity": 48
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_sheetOfClearshell": {
         "requiredItems": [
@@ -1029,7 +1088,8 @@
                 "quantity": 48
             }
         ],
-        "EnergyNeeded": 144
+        "EnergyNeeded": 144,
+        "output_quantity": 1
     },
     "ach_pileOfPlaster": {
         "requiredItems": [
@@ -1046,7 +1106,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 108
+        "EnergyNeeded": 108,
+        "output_quantity": 1
     },
     "ach_scarrotWine": {
         "requiredItems": [
@@ -1067,7 +1128,8 @@
                 "quantity": 25
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_grumpkinWine": {
         "requiredItems": [
@@ -1088,7 +1150,8 @@
                 "quantity": 20
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_smallStorageChest": {
         "requiredItems": [
@@ -1105,7 +1168,8 @@
                 "quantity": 88
             }
         ],
-        "EnergyNeeded": 8
+        "EnergyNeeded": 8,
+        "output_quantity": 1
     },
     "ach_tentacactus_tequila": {
         "requiredItems": [
@@ -1122,7 +1186,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_grumpkinWine12": {
         "requiredItems": [
@@ -1143,7 +1208,8 @@
                 "quantity": 240
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_butterberry_butterbrew": {
         "requiredItems": [
@@ -1160,7 +1226,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_cubecumber_encumber_wine": {
         "requiredItems": [
@@ -1177,7 +1244,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_butterberry_butterbrew12": {
         "requiredItems": [
@@ -1194,7 +1262,8 @@
                 "quantity": 72
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_napricot_toddy12": {
         "requiredItems": [
@@ -1211,7 +1280,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 12
     },
     "ach_scarrotWine12": {
         "requiredItems": [
@@ -1232,7 +1302,8 @@
                 "quantity": 300
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_hotato_hotka": {
         "requiredItems": [
@@ -1249,7 +1320,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 2
+        "EnergyNeeded": 2,
+        "output_quantity": 1
     },
     "ach_hotatoSeeds": {
         "requiredItems": [
@@ -1270,7 +1342,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 3
+        "EnergyNeeded": 3,
+        "output_quantity": 1
     },
     "ach_slothmato_schnapps": {
         "requiredItems": [
@@ -1287,7 +1360,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_grainbow_grainshine": {
         "requiredItems": [
@@ -1304,7 +1378,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_napricot_toddy": {
         "requiredItems": [
@@ -1321,7 +1396,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_muckchuck_mead": {
         "requiredItems": [
@@ -1338,7 +1414,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 4
+        "EnergyNeeded": 4,
+        "output_quantity": 1
     },
     "ach_wintermint_whiskey12": {
         "requiredItems": [
@@ -1355,7 +1432,8 @@
                 "quantity": 72
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_tentacactus_tequila12": {
         "requiredItems": [
@@ -1372,7 +1450,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": null
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_cubecumber_encumber_wine12": {
         "requiredItems": [
@@ -1389,7 +1468,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 12
     },
     "ach_slothmato_schnapps12": {
         "requiredItems": [
@@ -1406,7 +1486,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 12
     },
     "ach_muckchuck_mead12": {
         "requiredItems": [
@@ -1423,7 +1504,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 48
+        "EnergyNeeded": 48,
+        "output_quantity": 12
     },
     "ach_wintermint_whiskey": {
         "requiredItems": [
@@ -1440,7 +1522,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_fireplace_pot": {
         "requiredItems": [
@@ -1461,7 +1544,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 15
+        "EnergyNeeded": 15,
+        "output_quantity": 1
     },
     "ach_grainbow_grainshine12": {
         "requiredItems": [
@@ -1478,7 +1562,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_hotato_hotka12": {
         "requiredItems": [
@@ -1495,7 +1580,8 @@
                 "quantity": 36
             }
         ],
-        "EnergyNeeded": 24
+        "EnergyNeeded": 24,
+        "output_quantity": 12
     },
     "ach_constructioncone": {
         "requiredItems": [
@@ -1512,7 +1598,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 5
+        "EnergyNeeded": 5,
+        "output_quantity": 1
     },
     "ach_dry_baby_back_butterberry_ribs": {
         "requiredItems": [
@@ -1533,7 +1620,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 22
+        "EnergyNeeded": 22,
+        "output_quantity": 1
     },
     "ach_watertest": {
         "requiredItems": [
@@ -1542,7 +1630,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": null
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_dry_honey_kissed_popberry_chops": {
         "requiredItems": [
@@ -1563,7 +1652,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 23
+        "EnergyNeeded": 23,
+        "output_quantity": 1
     },
     "ach_dry_sald_encrusted_scarrot_skewers": {
         "requiredItems": [
@@ -1584,7 +1674,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 25
+        "EnergyNeeded": 25,
+        "output_quantity": 1
     },
     "ach_dry_pulled_muckchuck_platter": {
         "requiredItems": [
@@ -1609,7 +1700,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 24
+        "EnergyNeeded": 24,
+        "output_quantity": 1
     },
     "ach_dry_maple_glazed_grumpkin_slabs": {
         "requiredItems": [
@@ -1630,7 +1722,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 25
+        "EnergyNeeded": 25,
+        "output_quantity": 1
     },
     "ach_4_leaf_cloveregano": {
         "requiredItems": [
@@ -1643,7 +1736,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_tangy_bbq_sauce": {
         "requiredItems": [
@@ -1664,7 +1758,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_honey_bbq_sauce": {
         "requiredItems": [
@@ -1685,7 +1780,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_spicy_bbq_sauce": {
         "requiredItems": [
@@ -1706,7 +1802,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 13
+        "EnergyNeeded": 13,
+        "output_quantity": 1
     },
     "ach_traditional_bbq_sauce": {
         "requiredItems": [
@@ -1727,7 +1824,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 9
+        "EnergyNeeded": 9,
+        "output_quantity": 1
     },
     "ach_hot_sauce": {
         "requiredItems": [
@@ -1752,7 +1850,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 8
+        "EnergyNeeded": 8,
+        "output_quantity": 1
     },
     "ach_Moist_Salt_Encrusted_Popberry_Skewers": {
         "requiredItems": [
@@ -1773,7 +1872,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 18
+        "EnergyNeeded": 18,
+        "output_quantity": 1
     },
     "ach_Moist_Maple_Glazed_Scarrot_Slabs": {
         "requiredItems": [
@@ -1794,7 +1894,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 20
+        "EnergyNeeded": 20,
+        "output_quantity": 1
     },
     "ach_hardwood_smoked_bbq_sauce": {
         "requiredItems": [
@@ -1815,7 +1916,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 11
+        "EnergyNeeded": 11,
+        "output_quantity": 1
     },
     "ach_Moist_Scarrot_and_Butterberry_Kebabs": {
         "requiredItems": [
@@ -1844,7 +1946,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 18
+        "EnergyNeeded": 18,
+        "output_quantity": 1
     },
     "ach_Moist_Broiled_Muckchuck_Burgers": {
         "requiredItems": [
@@ -1865,7 +1968,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 20
+        "EnergyNeeded": 20,
+        "output_quantity": 1
     },
     "ach_Starry_Honey_Kissed_Scarrot_Chops": {
         "requiredItems": [
@@ -1886,7 +1990,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 28
+        "EnergyNeeded": 28,
+        "output_quantity": 1
     },
     "ach_Moist_Honey_Kissed_Grumpkin_Chops": {
         "requiredItems": [
@@ -1907,7 +2012,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 24
+        "EnergyNeeded": 24,
+        "output_quantity": 1
     },
     "ach_Starry_Maple_Glazed_Popberry_Slabs": {
         "requiredItems": [
@@ -1928,7 +2034,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 24
+        "EnergyNeeded": 24,
+        "output_quantity": 1
     },
     "ach_Starry_Grilled_Hotato_Kielbasa": {
         "requiredItems": [
@@ -1949,7 +2056,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 35
+        "EnergyNeeded": 35,
+        "output_quantity": 1
     },
     "ach_Starry_Salt_Encrusted_Grumpkin_Skewers": {
         "requiredItems": [
@@ -1970,7 +2078,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 20
+        "EnergyNeeded": 20,
+        "output_quantity": 1
     },
     "ach_Starry_Butterberry_Brisket": {
         "requiredItems": [
@@ -1995,7 +2104,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 32
+        "EnergyNeeded": 32,
+        "output_quantity": 1
     },
     "ach_runningShoe_basic": {
         "requiredItems": [
@@ -2004,7 +2114,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_growthlabkit": {
         "requiredItems": [
@@ -2033,7 +2144,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_portal_kit": {
         "requiredItems": [
@@ -2062,7 +2174,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 999
+        "EnergyNeeded": 999,
+        "output_quantity": 1
     },
     "ach_basicbbqkit": {
         "requiredItems": [
@@ -2091,7 +2204,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 500
+        "EnergyNeeded": 500,
+        "output_quantity": 1
     },
     "ach_popberryWine": {
         "requiredItems": [
@@ -2108,7 +2222,8 @@
                 "quantity": 3
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_popberryWine12": {
         "requiredItems": [
@@ -2125,7 +2240,8 @@
                 "quantity": 120
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 12
     },
     "ach_Plain_Omelet": {
         "requiredItems": [
@@ -2134,7 +2250,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_Wooden_Stool": {
         "requiredItems": [
@@ -2143,7 +2260,8 @@
                 "quantity": 8
             }
         ],
-        "EnergyNeeded": 1
+        "EnergyNeeded": 1,
+        "output_quantity": 1
     },
     "ach_hotatoburrito": {
         "requiredItems": [
@@ -2164,7 +2282,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 3
+        "EnergyNeeded": 3,
+        "output_quantity": 1
     },
     "ach_pet_treats_10pack": {
         "requiredItems": [
@@ -2197,7 +2316,8 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 100
+        "EnergyNeeded": 100,
+        "output_quantity": 1
     },
     "ach_pet_treats_15pack": {
         "requiredItems": [
@@ -2230,7 +2350,8 @@
                 "quantity": 15
             }
         ],
-        "EnergyNeeded": 150
+        "EnergyNeeded": 150,
+        "output_quantity": 1
     },
     "ach_pet_treats_1pack": {
         "requiredItems": [
@@ -2263,7 +2384,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_pet_treats_12pack": {
         "requiredItems": [
@@ -2296,7 +2418,8 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 12
     },
     "ach_grumpkingspicedlatte": {
         "requiredItems": [
@@ -2321,7 +2444,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 12
+        "EnergyNeeded": 12,
+        "output_quantity": 1
     },
     "ach_cottoncandyshake": {
         "requiredItems": [
@@ -2346,7 +2470,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 8
+        "EnergyNeeded": 8,
+        "output_quantity": 1
     },
     "ach_purple_rug": {
         "requiredItems": [
@@ -2367,7 +2492,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 8
+        "EnergyNeeded": 8,
+        "output_quantity": 1
     },
     "ach_bones_hut": {
         "requiredItems": [
@@ -2392,7 +2518,8 @@
                 "quantity": 2
             }
         ],
-        "EnergyNeeded": 40
+        "EnergyNeeded": 40,
+        "output_quantity": 1
     },
     "ach_fertilizer": {
         "requiredItems": [
@@ -2401,7 +2528,8 @@
                 "quantity": 20
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_coffeepods": {
         "requiredItems": [
@@ -2410,7 +2538,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 5
+        "EnergyNeeded": 5,
+        "output_quantity": 1
     },
     "ach_grumpkinspicedlatte_batch": {
         "requiredItems": [
@@ -2435,7 +2564,8 @@
                 "quantity": 12
             }
         ],
-        "EnergyNeeded": 144
+        "EnergyNeeded": 144,
+        "output_quantity": 1
     },
     "ach_cowfeed": {
         "requiredItems": [
@@ -2448,7 +2578,8 @@
                 "quantity": 20
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_builder": {
         "requiredItems": [
@@ -2469,7 +2600,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_christmas_drink_2023": {
         "requiredItems": [
@@ -2494,7 +2626,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_christmassweater_2023": {
         "requiredItems": [
@@ -2511,7 +2644,8 @@
                 "quantity": 6
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_christmas_cookieman": {
         "requiredItems": [
@@ -2532,7 +2666,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     },
     "ach_mocastar": {
         "requiredItems": [
@@ -2557,7 +2692,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_angel_2": {
         "requiredItems": [
@@ -2578,7 +2714,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_builder_2": {
         "requiredItems": [
@@ -2599,7 +2736,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_neo_2": {
         "requiredItems": [
@@ -2620,7 +2758,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_connector_2": {
         "requiredItems": [
@@ -2641,7 +2780,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_dreamer_2": {
         "requiredItems": [
@@ -2662,7 +2802,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_angel": {
         "requiredItems": [
@@ -2679,7 +2820,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_connector": {
         "requiredItems": [
@@ -2696,7 +2838,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_neo": {
         "requiredItems": [
@@ -2713,7 +2856,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_moca_dreamer": {
         "requiredItems": [
@@ -2730,7 +2874,8 @@
                 "quantity": 1
             }
         ],
-        "EnergyNeeded": 10
+        "EnergyNeeded": 10,
+        "output_quantity": 1
     },
     "ach_heartbeet_wine": {
         "requiredItems": [
@@ -2751,6 +2896,7 @@
                 "quantity": 10
             }
         ],
-        "EnergyNeeded": 0
+        "EnergyNeeded": 0,
+        "output_quantity": 1
     }
 }
