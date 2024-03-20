@@ -7,13 +7,14 @@ from .models import Recipe, Item
 
 recipe_list = Recipe.objects.all()
 
-choices = []
+raw_choices = []
 for recipe in recipe_list:
-    choices.append(
+    raw_choices.append(
         (recipe.id_recipe, recipe.name_recipe.name_item)
     )
 
 
+choices = sorted(raw_choices, key=lambda x:x[1])
 
 class DropdownForm(forms.Form):
     
