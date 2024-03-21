@@ -1,0 +1,188 @@
+/* #################################################################### */
+/* Header styling */
+
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    /* background-color: yellow; */
+    height: 60px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+}
+
+.nav-container {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2rem;
+
+
+}
+
+.nav-bar {
+    box-sizing: border-box;
+    /* background-color: limegreen; */
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: bold;
+    color: black;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar:hover {
+    box-shadow: 0 0 10px black;
+}
+
+
+
+/* footer styling */
+
+/* ###################################################### */
+
+footer {
+    background-color: red;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+
+
+
+
+
+
+/* main content styling */
+/* ######################################### */
+main {
+    position: absolute;
+    z-index: 0;
+    /* background-color: skyblue; */
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    top: 0;
+    width: 100%;
+}
+
+
+/* recipe */
+
+
+#recipe-container {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+
+}
+
+
+#ingredients-info,
+#selection,
+#product-details {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    padding: 20px;
+
+
+
+}
+
+#selection {
+    font-size: 1.5rem;
+}
+
+#selection-list{
+    font-size: 1.2rem;
+}
+
+#recipe-data {
+    display: flex;
+    /* border: 1px solid blue; */
+    flex-wrap: wrap;
+
+
+}
+
+.recipe-info {
+    flex: 1;
+    /* Make both divs share available space equally */
+
+    /* Prevent overflow issues */
+    padding: 10px;
+    /* Optional: Add some spacing */
+    border: 1px groove #ccc;
+
+    flex-basis: calc(50% - 20px);
+    margin-left: 10px;
+    /* Optional: Add borders for visibility */
+    border-radius: 50px;
+    border-collapse: separate;
+    background-color: rgb(194, 210, 205);
+}
+
+#ingredients-info {
+    padding-top: 40px;
+}
+
+#product-details {
+
+    padding-left: 60px;
+}
+
+h4,
+h3 {
+    padding: 2px;
+    margin: 0.5rem;
+}
+
+
+
+table {
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+td,
+th {
+    border: 1px dotted gray;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+thead {
+    background-color: skyblue;
+}
+
+td {
+    background-color: white;
+    text-align: center;
+}
+
+td:first-child {
+    text-align: left;
+}

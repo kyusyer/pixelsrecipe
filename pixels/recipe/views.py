@@ -97,3 +97,8 @@ def itemdata(request,itemName):
         price = get_price(itemName)
 
     return HttpResponse(price)
+
+
+def energy(request):
+    '''This is the view for the list of energy items'''
+    return render(request,"recipe/energy.html")

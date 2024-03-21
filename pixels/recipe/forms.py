@@ -18,4 +18,7 @@ choices = sorted(raw_choices, key=lambda x:x[1])
 
 class DropdownForm(forms.Form):
     
-    recipe = forms.ChoiceField(choices=choices)
+    recipe = forms.ChoiceField(
+        choices=choices,
+        widget=forms.Select(attrs={'id':'selection-list'})
+                               )

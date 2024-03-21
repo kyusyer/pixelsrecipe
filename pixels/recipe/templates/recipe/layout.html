@@ -1,0 +1,52 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels-Market</title>
+    <link rel="stylesheet" href="{% static 'recipe/stylesheet.css' %}">
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="nav-bar" id="nav-recipe">
+                <a href="{% url 'recipe:index' %}">Recipe</a>
+
+            </div>
+            <div class="nav-bar" id="nav-resources">
+                <a href="">Resources</a>
+
+            </div>
+            <div class="nav-bar" id="nav-energy">
+                <a href="{% url 'recipe:energy' %}">Energy</a>
+
+            </div>
+        </nav>
+
+
+        </div>
+
+    </header>
+
+    {% block main %}
+
+    <!-- content here -->
+
+    {% endblock %}
+
+    <footer>
+        this is a footer
+
+    </footer>
+
+</body>
+
+</html>
