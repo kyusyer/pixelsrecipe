@@ -1,6 +1,8 @@
 /* #################################################################### */
 /* Header styling */
-
+body {
+    min-width: 500px;
+}
 
 header {
     position: fixed;
@@ -115,7 +117,7 @@ main {
     font-size: 1.5rem;
 }
 
-#selection-list{
+#selection-list {
     font-size: 1.2rem;
 }
 
@@ -185,4 +187,39 @@ td {
 
 td:first-child {
     text-align: left;
+}
+
+
+
+
+/* Industry Menu */
+
+#industry-menu {
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.industry {
+    background-color: green;
+    border: 1px solid rgb(224, 233, 246);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    user-select: none;
+    width: 20%;
+    min-width: 88px;
+    max-width: 130px;
+}
+
+.industry:hover {
+    box-shadow: 0 0 5px red;
+}
+
+#industry-info {
+    background-color: rgba(239, 243, 245, 0.915);
 }
