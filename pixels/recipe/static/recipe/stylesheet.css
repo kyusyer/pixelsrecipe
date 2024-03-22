@@ -211,6 +211,9 @@ td:first-child {
     box-sizing: border-box;
     border-radius: 10px;
     user-select: none;
+    width: 20%;
+    min-width: 88px;
+    max-width: 130px;
 }
 
 .industry:hover {
