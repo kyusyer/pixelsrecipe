@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 import json
 import requests
-from .models import Item, Recipe
+from .models import Item, Recipe, Industry
 from django.core.exceptions import ObjectDoesNotExist
 
 from .forms import DropdownForm
@@ -102,3 +102,25 @@ def itemdata(request,itemName):
 def energy(request):
     '''This is the view for the list of energy items'''
     return render(request,"recipe/energy.html")
+
+
+
+
+def resources(request):
+    """views for resources"""
+
+    products = get_products("Farming")
+    
+            # list of items
+    
+
+    return render(request, "recipe/resources.html", {"products":products})
+
+
+
+def industry(request, industry):
+    """api for resource data"""
+    products = {"products": get_products(industry)}
+    
+    return JsonResponse(products)
+

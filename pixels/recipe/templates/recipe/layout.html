@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixels-Market</title>
     <link rel="stylesheet" href="{% static 'recipe/stylesheet.css' %}">
+    <script src="{% static 'recipe/resources.js' %}"></script>
 
 
 
@@ -22,11 +23,11 @@
 
             </div>
             <div class="nav-bar" id="nav-resources">
-                <a href="">Resources</a>
+                <a href="{% url 'recipe:resources' %}">Resources</a>
 
             </div>
             <div class="nav-bar" id="nav-energy">
-                <a href="{% url 'recipe:energy' %}">Energy</a>
+                <a href="{% url 'recipe:energy' %}">Energy</a>s
 
             </div>
         </nav>
@@ -35,12 +36,15 @@
         </div>
 
     </header>
+    <main>
+        {% block main %}
 
-    {% block main %}
+        <!-- content here -->
 
-    <!-- content here -->
+        {% endblock %}
+    </main>
 
-    {% endblock %}
+
 
     <footer>
         this is a footer

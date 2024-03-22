@@ -1,0 +1,53 @@
+{% extends "recipe/layout.html" %}
+
+{% block main %}
+
+<div id="recipe-container">
+
+
+    <div id="industry-menu">
+        <div class="industry">Farming</div>
+        <div class="industry">Forestry</div>
+        <div class="industry">Aviculture</div>
+        <div class="industry">Sluggery</div>
+        <div class="industry">Bee-Keeping</div>
+    </div>
+
+
+    <div id="industry-info">
+        <table id="ingredients-table">
+            <thead id="table-head">
+                <tr>
+                    <th>Item</th>
+                    <th>Energy Needed</th>
+                    <th>Market Price</th>
+                    <th>Profit</th>
+                    <th>Profit per Energy</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                {% for product in products %}
+                <tr>
+
+
+                    <td class="item-name">{{product.name}}</td>
+                    <td class="energy">{{product.energy_needed}}</td>
+                    <td class="market-price">{{product.market_price}}</td>
+                    <td class="profit">{{product.profit}}</td>
+                    <td class="Profit-energy">{{product.pe}}</td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

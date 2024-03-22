@@ -15,3 +15,16 @@ class Recipe(models.Model):
 
     def __str__(self):
         return f"{self.id_recipe} {self.name_recipe}"
+    
+
+
+class Industry(models.Model):
+    type = models.CharField(max_length=64)
+    industry = models.CharField(max_length=64)
+    name_item = models.ForeignKey(Item,on_delete=models.CASCADE, related_name="Group")
+
+
+    def __str__(self):
+        return f"{self.industry} -- {self.name_item}"
+
+

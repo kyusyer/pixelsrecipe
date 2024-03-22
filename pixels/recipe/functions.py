@@ -1,6 +1,6 @@
 import requests
 
-from .models import Item, Recipe
+from .models import Item, Recipe, Industry
 
 
 
@@ -24,3 +24,30 @@ def get_price(id):
         return response2["listings"][0]["price"]
      else:
         return 0
+     
+
+
+
+def get_products(industry):
+
+    items = Industry.objects.filter(industry=industry)
+
+    products = []
+
+    for item in items:
+
+        name = item.name_item.name_item
+        id = item.name_item.id_item
+
+        market_price =  get_price(id)
+        product_data = {   
+                "name":name,
+                "energy_needed":3,
+                "market_price":market_price,
+                "profit":0,
+                "pe":0
+            }
+
+        products.append(product_data)
+
+    return products
