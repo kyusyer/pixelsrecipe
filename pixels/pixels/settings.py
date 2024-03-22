@@ -62,6 +62,7 @@ MIDDLEWARE = [
 CSRF_TRUSTED_ORIGINS = [
    
     "https://pixelsrecipe-production.up.railway.app",
+    "https://clammy-lamp-recipeupdate.up.railway.app",
     # "https://localhost:8080/"
 ]
 
