@@ -26,5 +26,13 @@ class Industry(models.Model):
 
     def __str__(self):
         return f"{self.industry} -- {self.name_item}"
+    
+
+class Energy(models.Model):
+    item_name = models.ForeignKey(Item, on_delete=models.CASCADE)
+    energy = models.FloatField()
+
+    def __str__(self):
+        return f"{self.item_name} {self.energy}"
 
 

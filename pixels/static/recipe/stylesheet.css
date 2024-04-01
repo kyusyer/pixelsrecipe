@@ -223,3 +223,8 @@ td:first-child {
 #industry-info {
     background-color: rgba(239, 243, 245, 0.915);
 }
+
+#update-now {
+    background-color: orange;
+    height: 20px;
+}

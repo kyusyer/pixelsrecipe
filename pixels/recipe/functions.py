@@ -14,6 +14,7 @@ def get_item_name(id):
 
 def get_price(id):
     #  print(id,"checxk")
+    #  print(id)
      url = (f"https://pixels-server.pixels.xyz/v1/marketplace/item/{id}?pid=65cf188f507c9890f600014c&v"
                 f"=1708071055158.2617")
      

@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 
 import json
 import requests
-from .models import Item, Recipe, Industry
+from .models import Item, Recipe, Industry, Energy
 from django.core.exceptions import ObjectDoesNotExist
 
 from .forms import DropdownForm
@@ -91,6 +91,7 @@ def index(request):
 def itemdata(request,itemName):
     """return price of the requested item"""
     try:
+        # print(itemName)
         price = get_price(Item.objects.get(name_item=itemName).id_item)
         
     except ObjectDoesNotExist:
@@ -101,7 +102,8 @@ def itemdata(request,itemName):
 
 def energy(request):
     '''This is the view for the list of energy items'''
-    return render(request,"recipe/energy.html")
+
+    return render(request,"recipe/energy.html",{ "energy_items": Energy.objects.all()})
 
 
 

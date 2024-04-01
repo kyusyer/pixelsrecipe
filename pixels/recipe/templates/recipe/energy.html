@@ -4,71 +4,39 @@
 {% block main%}
 
 <div>
+    <div id="update-now" style="background-color: orange; height: 30px; width:150px;text-align: center;padding-top: 5px;border: 2px solid gray;">
+        update - prices
+    </div>
     <table id="energy-table">
         <thead id="table-head">
             <tr>
                 <th>Item</th>
                 <th>Energy</th>
-                <th>Prod Energy</th>
+                <!-- <th>Prod Energy</th>
                 <th>Effective Energy</th>
-                <th>CE(Craft)</th>
-                <th>CE(Buy)</th>
-                <th>Recommended Action</th>
-                <th>CE(min)</th>
+                <th>CE(Craft)</th> -->
+                <th>MP PRICE</th>
+                <th>Coins/Energy</th>
+                <!-- <th>Recommended Action</th>
+                <th>CE(min)</th> -->
             </tr>
         </thead>
         <tbody>
-            <tr>
+            {% for item in energy_items %}
+            <tr class="energy-item-data">
+                <td>{{ item.item_name.name_item }}</td>
+                <td>{{ item.energy }}</td>
+                <td> MP PRICE here</td>
+                <td> Conis per energy here</td>
+                <!-- <td>Germany</td>
                 <td>Alfreds Futterkiste</td>
                 <td>Maria Anders</td>
                 <td>Germany</td>
                 <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
+                <td>Maria Anders</td> -->
 
             </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </div>
