@@ -1,35 +1,82 @@
 
-function updateEnergy() {
+
+async function updateEnergy() {
+
+
+    const updateButton = document.querySelector("#update-now");
+    var origText = updateButton.textContent
+    updateButton.style.backgroundColor = "Gray";
+    updateButton.textContent = "Updating...";
+
+    var unsortedTable = []
 
     var elTableRows = document.querySelectorAll(".energy-item-data");
+    const tableBody = document.querySelector("tbody");
+    tableBody.innerHTML = "Fetching data.........";
 
-    elTableRows.forEach(row => {
-
-        var name = row.querySelector("td:first-child").textContent;
-        var energyGain = row.querySelector("td:nth-child(2)").textContent;
-
-
-
-        fetch(`item/${name}`)
-            .then(response => response.text())
-            .then(price => {
-                row.querySelector("td:nth-child(3)").textContent = price;
-
-                let coinsPerEnergy = +price / + energyGain;
-
-                row.querySelector("td:nth-child(4)").textContent = coinsPerEnergy.toFixed(2);
-
-            });
+    // elTableRows.forEach(row => {
+    // forEach can only be used in arrays, nodelist need to be converted to array first.. better use for..of
 
 
+    for (const row of elTableRows) {
+
+        const name = row.querySelector("td:first-child").textContent;
+        console.log(name);
+        const energyGain = row.querySelector("td:nth-child(2)").textContent;
+
+        try {
+
+            const response = await fetch(`item/${name}`);
+            const price = await response.text();
+            const coinsPerEnergy = +price / +energyGain;
+
+            const rowData = {
+                name, // shorthand of writing name: name in js, 
+                energyGain,
+                price,
+                CoinEnergy: coinsPerEnergy.toFixed(2)
+            };
+
+            unsortedTable.push(rowData);
+
+        } catch (error) {
+            console.error("Error fetching data:", error);
+        }
     }
-    )
+
+
+
+
+
+
+    const sortedTable = unsortedTable.sort((prev, next) => +prev.CoinEnergy - +next.CoinEnergy)
+
+
+
+    tableBody.innerHTML = "";
+    sortedTable.forEach((rowData) => {
+
+        const trow = document.createElement("tr");
+        trow.className = "energy-item-data";
+        trow.innerHTML = `
+        <td>${rowData.name}</td>
+        <td>${rowData.energyGain}</td>
+        <td>${rowData.price}</td>
+        <td>${rowData.CoinEnergy}</td>    
+        `;
+
+
+        // console.log(trow.innerHTML);
+        tableBody.append(trow);
+
+
+    })
+    updateButton.style.backgroundColor = "yellow";
+    updateButton.textContent = origText;
+
+
 }
-// function sortEnergy(){
-//     var elTableRows = document.querySelectorAll(".energy-item-data");
 
-
-// }
 
 function updateData(industry) {
     let currentUrl = window.location.href;
@@ -95,8 +142,17 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(currentPath)
 
     if (currentPath === energyPath) {
-        updateEnergy()
-        document.querySelector("#update-now").onclick = updateEnergy;
+        updateEnergy();
+
+        const updateButton = document.querySelector("#update-now");
+        updateButton.onclick = function (event) {
+            event.stopPropagation();
+            updateEnergy();
+
+        }
+
+
+       
     }
 
 
@@ -166,3 +222,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //     )
 // }
+
+

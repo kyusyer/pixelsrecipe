@@ -1,7 +1,15 @@
 /* #################################################################### */
 /* Header styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     min-width: 500px;
+    width: 100vw;
+
 }
 
 header {
@@ -13,6 +21,7 @@ header {
     box-sizing: border-box;
     width: 100%;
     text-align: right;
+    background-color: gray;
 }
 
 .nav-container {
@@ -36,13 +45,15 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 
     font-weight: bold;
-    color: black;
+
 
 
 }
 
+
 a {
     text-decoration: none;
+    color: white;
 }
 
 .nav-bar:hover {
@@ -119,12 +130,16 @@ main {
 
 #selection-list {
     font-size: 1.2rem;
+    width: 100%;
 }
 
 #recipe-data {
     display: flex;
     /* border: 1px solid blue; */
     flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 10px;
 
 
 }
@@ -139,11 +154,12 @@ main {
     border: 1px groove #ccc;
 
     flex-basis: calc(50% - 20px);
-    margin-left: 10px;
     /* Optional: Add borders for visibility */
-    border-radius: 50px;
     border-collapse: separate;
-    background-color: rgb(194, 210, 205);
+    /* background-color: rgb(194, 210, 205); */
+    background-color: rgba(196, 186, 186, 0.86);
+    border-radius: 5px;
+
 }
 
 #ingredients-info {
@@ -201,6 +217,7 @@ td:first-child {
     flex-direction: row;
     padding-left: 10px;
     margin-bottom: 10px;
+    min-width: calc(100%-100px);
 
 }
 
@@ -222,9 +239,46 @@ td:first-child {
 
 #industry-info {
     background-color: rgba(239, 243, 245, 0.915);
+    min-width: calc(100%-100px);
 }
 
 #update-now {
-    background-color: orange;
-    height: 20px;
+    background-color: yellow;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 5px;
+    border: 2px solid gray;
+    user-select: none;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width:420px) {
+
+    th,
+    td {
+        font-size: 11px;
+    }
+
+    .recipe-info,
+    .ingredients-info,
+    #ingredients-table {
+        max-width: 98%;
+    }
+
+    #recipe-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    #product-details {
+        padding-left: 15px;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+
 }
