@@ -1,8 +1,7 @@
 
 
 async function updateEnergy() {
-
-
+    /// updates the data on energy page and sort it from highest to lowest..
     const updateButton = document.querySelector("#update-now");
     var origText = updateButton.textContent
     updateButton.style.backgroundColor = "Gray";
@@ -46,12 +45,7 @@ async function updateEnergy() {
 
 
 
-
-
-
     const sortedTable = unsortedTable.sort((prev, next) => +prev.CoinEnergy - +next.CoinEnergy)
-
-
 
     tableBody.innerHTML = "";
     sortedTable.forEach((rowData) => {
@@ -69,11 +63,9 @@ async function updateEnergy() {
         // console.log(trow.innerHTML);
         tableBody.append(trow);
 
-
     })
     updateButton.style.backgroundColor = "yellow";
     updateButton.textContent = origText;
-
 
 }
 
@@ -81,10 +73,13 @@ async function updateEnergy() {
 function updateData(industry) {
     let currentUrl = window.location.href;
     let urlToFetch = currentUrl + "/" + industry;
-    console.log(urlToFetch);
+    // console.log(urlToFetch);
 
     const tbody = document.querySelector('tbody');
     tbody.innerHTML = "Loading data..";
+
+    var localRequirement = JSON.parse(localStorage.getItem("itemReq"));
+    // console.log(localRequirement)
     fetch(urlToFetch)
         .then(response => response.json())
         .then(data => {
@@ -103,17 +98,25 @@ function updateData(industry) {
 
 
                 const tdEnergy = document.createElement("td");
-                tdEnergy.textContent = product.energy_needed;
-                console.log(product.energy)
+                let energy_needed = localRequirement[product.name]["required_energy"]
+                // console.log(energy_needed)
+
+                tdEnergy.textContent = energy_needed;
 
                 const tdPrice = document.createElement("td");
                 tdPrice.textContent = product.market_price;
 
                 const tdProfit = document.createElement("td");
-                tdProfit.textContent = product.profit;
+
+                let cost = localRequirement[product.name]["capital"]
+
+                let profit = Math.floor((product.market_price * 0.99 - cost));
+                tdProfit.textContent = profit;
 
                 const tdPE = document.createElement("td");
-                tdPE.textContent = product.pe;
+                let out = localRequirement[product.name]["out"]
+                let pe = (profit / energy_needed) * out;
+                tdPE.textContent = pe.toFixed(2);
 
                 tr.appendChild(tdName);
                 tr.appendChild(tdEnergy);
@@ -135,13 +138,17 @@ function updateData(industry) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const energyPath = "/recipe/energy"
-    const industryPath = "/recipe/industry"
+    const industryPath = "/recipe/resources"
 
     var currentPath = window.location.pathname;
 
     console.log(currentPath)
 
     if (currentPath === energyPath) {
+
+
+
+
         updateEnergy();
 
         const updateButton = document.querySelector("#update-now");
@@ -151,8 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
-
-       
     }
 
 
@@ -160,6 +165,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelector(".industry").style.backgroundColor = "Gray";
 
+        if (!localStorage.getItem("requirement")) {
+            // let currHost = window.location.host;
+
+            // let urlToFetch = currHost+"/recipe/requirement"
+            fetch("/recipe/requirement")
+                .then(response => response.json())
+                .then(text => {
+                    localStorage.setItem("itemReq", JSON.stringify(text));
+                    // console.log("saved")
+
+                })
+        }
+
+
+        updateData("Farming");
         document.addEventListener('click', (event) => {
             if (event.target.classList.contains("industry")) {
                 document.querySelectorAll(".industry").forEach(industry => {

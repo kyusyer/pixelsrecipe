@@ -34,5 +34,16 @@ class Energy(models.Model):
 
     def __str__(self):
         return f"{self.item_name} {self.energy}"
+    
+
+class Requirement(models.Model):
+    item_name = models.CharField(max_length=64)
+    required_energy = models.FloatField()
+    capital = models.IntegerField()
+    out_quantity = models.FloatField()
+
+    def __str__(self):
+        return self.item_name
+
 
 

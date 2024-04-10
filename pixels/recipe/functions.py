@@ -52,3 +52,6 @@ def get_products(industry):
         products.append(product_data)
 
     return products
+
+# def get_product_req():
+    

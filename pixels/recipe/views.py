@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 
 import json
 import requests
-from .models import Item, Recipe, Industry, Energy
+from .models import Item, Recipe, Industry, Energy, Requirement
 from django.core.exceptions import ObjectDoesNotExist
 
 from .forms import DropdownForm
@@ -125,4 +125,22 @@ def industry(request, industry):
     products = {"products": get_products(industry)}
     
     return JsonResponse(products)
+
+
+def requirement(request):
+
+    results = Requirement.objects.all()
+
+    requirement = {}
+    for item in results:
+        requirement[item.item_name] = {
+            "required_energy": item.required_energy,
+            "capital": item.capital,
+            "out": item.out_quantity
+        } 
+
+  
+    
+    return JsonResponse(requirement)
+
 
