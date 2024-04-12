@@ -10,7 +10,7 @@ recipe_list = Recipe.objects.all()
 raw_choices = []
 for recipe in recipe_list:
     raw_choices.append(
-        (recipe.id_recipe, recipe.name_recipe.name_item)
+        (recipe.id_recipe, recipe.name)
     )
 
 

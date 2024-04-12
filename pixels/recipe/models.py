@@ -10,11 +10,12 @@ class Item(models.Model):
         return f"{self.name_item}  ({self.id_item})"
 
 class Recipe(models.Model):
-    id_recipe = models.CharField(max_length=64)
+    id_recipe = models.CharField(max_length=64, unique=True)
     name_recipe = models.ForeignKey(Item,on_delete=models.CASCADE, related_name="product" )
+    name = models.CharField(max_length=64, unique=True)
 
     def __str__(self):
-        return f"{self.id_recipe} {self.name_recipe}"
+        return f"Recipe_id: {self.id_recipe}_______Recipe_name: {self.name}________{self.name_recipe.name_item}"
     
 
 

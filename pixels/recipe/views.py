@@ -37,7 +37,7 @@ def index(request):
                     
                     
                     ingredients[i]["price"] = get_price(ingredient_id)
-                    ingredients[i]["price"] = get_price(ingredient_id)
+                    
 
                     ingredients[i]["total"] = int(ingredients[i]["quantity"])*int(ingredients[i]["price"])
 
