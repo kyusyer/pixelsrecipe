@@ -3,7 +3,8 @@
 async function updateEnergy() {
     /// updates the data on energy page and sort it from highest to lowest..
     const updateButton = document.querySelector("#update-now");
-    var origText = updateButton.textContent
+    let origText = updateButton.textContent
+    let origBGColor = updateButton.style.color;
     updateButton.style.backgroundColor = "Gray";
     updateButton.textContent = "Updating...";
 
@@ -64,7 +65,7 @@ async function updateEnergy() {
         tableBody.append(trow);
 
     })
-    updateButton.style.backgroundColor = "yellow";
+    updateButton.style.backgroundColor = origBGColor;
     updateButton.textContent = origText;
 
 }
@@ -137,6 +138,22 @@ function updateData(industry) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    document.addEventListener("click", (event) => {
+
+
+        if (event.target.classList.contains("burger")) {
+
+            let elNavBar = document.querySelector(".nav-container");
+            if (elNavBar.style.display === "none" || elNavBar.style.display === "") {
+                elNavBar.style.display = "flex";
+            }
+            else {
+                elNavBar.style.display = "none";
+            }
+
+        }
+    })
     const energyPath = "/recipe/energy"
     const industryPath = "/recipe/resources"
 
@@ -162,8 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     if (currentPath === industryPath) {
+        const origBG = document.querySelector(".industry:last-child").style.backgroundColor;
 
-        document.querySelector(".industry").style.backgroundColor = "Gray";
+
+        document.querySelector(".industry:first-child").style.backgroundColor = "Gray";
 
         if (!localStorage.getItem("requirement")) {
             // let currHost = window.location.host;
@@ -179,11 +198,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
 
+
         updateData("Farming");
         document.addEventListener('click', (event) => {
             if (event.target.classList.contains("industry")) {
+
                 document.querySelectorAll(".industry").forEach(industry => {
-                    industry.style.backgroundColor = "Green";
+                    industry.style.backgroundColor = origBG;
                 });
 
                 event.target.style.backgroundColor = "Gray";

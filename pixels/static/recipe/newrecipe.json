@@ -111,7 +111,7 @@
             }
         ],
         "EnergyNeeded": 36,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_Textile_Mill_Blueprint": {
         "requiredItems": [
@@ -349,7 +349,7 @@
             }
         ],
         "EnergyNeeded": 48,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_Brick": {
         "requiredItems": [
@@ -925,7 +925,7 @@
             }
         ],
         "EnergyNeeded": 12,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_stackOfWoodBeams": {
         "requiredItems": [
@@ -943,7 +943,7 @@
             }
         ],
         "EnergyNeeded": 48,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_trashcan": {
         "requiredItems": [
@@ -987,7 +987,7 @@
             }
         ],
         "EnergyNeeded": 24,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_cartOfIron": {
         "requiredItems": [
@@ -997,7 +997,7 @@
             }
         ],
         "EnergyNeeded": 36,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_collectionOfCloth": {
         "requiredItems": [
@@ -1015,7 +1015,7 @@
             }
         ],
         "EnergyNeeded": 36,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_globuleOfGlue": {
         "requiredItems": [
@@ -1037,7 +1037,7 @@
             }
         ],
         "EnergyNeeded": 36,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_jarOfConstructionPowder": {
         "requiredItems": [
@@ -1051,7 +1051,7 @@
             }
         ],
         "EnergyNeeded": 60,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_canOfShrapnel": {
         "requiredItems": [
@@ -1061,7 +1061,7 @@
             }
         ],
         "EnergyNeeded": 48,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_rackOfRope": {
         "requiredItems": [
@@ -1075,7 +1075,7 @@
             }
         ],
         "EnergyNeeded": 12,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_sheetOfClearshell": {
         "requiredItems": [
@@ -1089,7 +1089,7 @@
             }
         ],
         "EnergyNeeded": 144,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_pileOfPlaster": {
         "requiredItems": [
@@ -1107,7 +1107,7 @@
             }
         ],
         "EnergyNeeded": 108,
-        "output_quantity": 1
+        "output_quantity": 12
     },
     "ach_scarrotWine": {
         "requiredItems": [

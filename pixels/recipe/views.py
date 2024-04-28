@@ -89,7 +89,7 @@ def index(request):
 
 
 def itemdata(request,itemName):
-    """return price of the requested item"""
+    """API that return price of the requested item"""
     try:
         # print(itemName)
         price = get_price(Item.objects.get(name_item=itemName).id_item)

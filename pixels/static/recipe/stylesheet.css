@@ -1,11 +1,21 @@
 /* #################################################################### */
 /* Header styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     min-width: 500px;
+    width: 100vw;
+
 }
 
 header {
     position: fixed;
+    display: flex;
+    justify-content: end;
     z-index: 1;
     top: 0;
     /* background-color: yellow; */
@@ -13,16 +23,18 @@ header {
     box-sizing: border-box;
     width: 100%;
     text-align: right;
+    background-color: gray;
 }
 
 .nav-container {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
     height: 100%;
-    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 1.2rem;
+    align-items: center;
 
 
 }
@@ -36,13 +48,21 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 
     font-weight: bold;
-    color: black;
+
 
 
 }
 
+.nav-burger {
+    display: none;
+    padding-right: 20px;
+
+}
+
+
 a {
     text-decoration: none;
+    color: white;
 }
 
 .nav-bar:hover {
@@ -56,7 +76,7 @@ a {
 /* ###################################################### */
 
 footer {
-    background-color: red;
+    background-color: gray;
     position: fixed;
     bottom: 0px;
     height: 50px;
@@ -65,6 +85,7 @@ footer {
     z-index: 1;
     text-align: center;
     padding-top: 10px;
+    color: rgba(46, 42, 42, 0.596);
 
 }
 
@@ -94,10 +115,14 @@ main {
 #recipe-container {
     /* border: 1px solid black; */
     box-sizing: border-box;
-    width: 100%;
-    padding-left: 50px;
+    /* width: 100%; */
+    /* padding-left: 100px; */
     padding-top: 20px;
-    padding-right: 50px;
+    /* padding-right: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -107,7 +132,7 @@ main {
 #product-details {
     box-sizing: border-box;
     /* border: 1px solid red; */
-    padding: 20px;
+    /* padding: 20px; */
 
 
 
@@ -119,40 +144,63 @@ main {
 
 #selection-list {
     font-size: 1.2rem;
+    width: 100%;
 }
 
 #recipe-data {
     display: flex;
     /* border: 1px solid blue; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    border-radius: 20px;
+    background-color: gray;
+    padding: 10px;
+    width: 620px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 10px;
 
 
 }
 
 .recipe-info {
-    flex: 1;
+    /* flex: 1;
     /* Make both divs share available space equally */
 
     /* Prevent overflow issues */
-    padding: 10px;
+    /* padding: 10px; */
     /* Optional: Add some spacing */
     border: 1px groove #ccc;
 
-    flex-basis: calc(50% - 20px);
-    margin-left: 10px;
+    /* flex-basis: calc(50% - 20px); */
     /* Optional: Add borders for visibility */
-    border-radius: 50px;
-    border-collapse: separate;
-    background-color: rgb(194, 210, 205);
+    /* border-collapse: separate; */
+    /* background-color: rgb(194, 210, 205); */
+    background-color: rgba(196, 186, 186, 0.86);
+    border-radius: 5px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+
 }
 
 #ingredients-info {
     padding-top: 40px;
+    align-items: start;
 }
 
-#product-details {
+#product-details h3>span {
+    text-decoration: underline;
+    color: rgb(14, 14, 65);
+}
 
-    padding-left: 60px;
+#product-details span {
+
+    font-style: italic;
+
+    /* padding-left: 60px; */
 }
 
 h4,
@@ -164,7 +212,7 @@ h3 {
 
 
 table {
-    margin: auto;
+    /* margin: auto; */
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -195,17 +243,18 @@ td:first-child {
 /* Industry Menu */
 
 #industry-menu {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding-left: 10px;
     margin-bottom: 10px;
+    min-width: calc(100%-100px);
 
 }
 
 .industry {
-    background-color: green;
+    background-color: rgb(2, 101, 2);
     border: 1px solid rgb(224, 233, 246);
     padding: 10px;
     box-sizing: border-box;
@@ -214,17 +263,118 @@ td:first-child {
     width: 20%;
     min-width: 88px;
     max-width: 130px;
+    color: rgba(255, 255, 255, 0.927);
+    text-align: center;
 }
 
 .industry:hover {
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 5px rgb(219, 202, 202);
 }
 
 #industry-info {
     background-color: rgba(239, 243, 245, 0.915);
+    min-width: calc(100%-100px);
 }
 
 #update-now {
-    background-color: orange;
-    height: 20px;
+    background-color: rgb(0, 30, 255);
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding-top: 5px;
+    border: 2px solid gray;
+    user-select: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.energy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.btn-energy-container {
+    width: 100%;
+}
+
+@media only screen and (max-width: 660px) {
+    #recipe-data {
+        flex-direction: column;
+        height: 600px;
+        width: 400px;
+    }
+
+    .recipe-info {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+
+    th,
+    td {
+        font-size: 11px;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        height: 150px;
+        background-color: gray;
+        border: 3px solid white;
+        position: fixed;
+        top: 50px;
+        right: 10px;
+        border-radius: 20px;
+        ;
+
+    }
+
+    .nav-bar {
+        width: 100%;
+        text-align: start;
+        border-bottom: 1px solid white;
+    }
+
+    .recipe-info,
+    .ingredients-info,
+    #ingredients-table {
+        max-width: 98%;
+    }
+
+    #recipe-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    #product-details {
+        padding-left: 15px;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+    .recipe-info {
+        width: 240px;
+    }
+
+    .nav-burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+    }
+
+    .burger {
+        border-top: 5px solid black;
+        height: 5px;
+        width: 30px;
+    }
+
+
 }
