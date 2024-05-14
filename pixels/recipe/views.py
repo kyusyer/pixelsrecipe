@@ -3,7 +3,7 @@ from django.http import HttpResponse, JsonResponse
 
 import json
 import requests
-from .models import Item, Recipe, Industry, Energy, Requirement
+from .models import Item, Recipe, Industry, Energy, Requirement, Task
 from django.core.exceptions import ObjectDoesNotExist
 
 from .forms import DropdownForm
@@ -119,6 +119,13 @@ def resources(request):
     return render(request, "recipe/resources.html", {"products":products})
 
 
+def tasks(request):
+    """views for the task route"""
+
+    
+
+    return render(request, "recipe/task.html",{"tasks":Task.objects.all()})
+
 
 def industry(request, industry):
     """api for resource data"""
@@ -142,5 +149,19 @@ def requirement(request):
   
     
     return JsonResponse(requirement)
+
+
+
+def addTask(request):
+
+    newtask = Task()
+    print(request)
+    newtask.task = request.header.data
+    newtask.save()
+    
+    return HttpResponse("newtask added")
+
+
+
 
 

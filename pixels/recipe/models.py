@@ -45,6 +45,10 @@ class Requirement(models.Model):
 
     def __str__(self):
         return self.item_name
+    
+
+class Task(models.Model):
+    task = models.CharField(max_length=64)
 
 
 

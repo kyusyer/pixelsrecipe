@@ -9,7 +9,9 @@ urlpatterns = [
     path("energy", views.energy, name="energy"),
     path("resources", views.resources, name="resources"),
     path("resources/<str:industry>", views.industry, name="industry"),
-    path("requirement", views.requirement, name="requirement")
+    path("requirement", views.requirement, name="requirement"),
+    path("tasks", views.tasks, name="task"),
+    path("tasks/add", views.addTask, name="add"),
 
 ]
 
