@@ -1,0 +1,18 @@
+{% extends "recipe/layout.html" %}
+
+{% block main %}
+
+<ol>
+
+
+    {% for task in tasks %}
+    <li>{{task.task}}</li>
+
+
+    {% empty %}
+    <h1>No task</h1>
+
+    {% endfor%}
+</ol>
+
+{% endblock %}
